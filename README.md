@@ -11,4 +11,4 @@ Then it will determine whether or not it needs Java 8.
 If your machine does need Java 8 it will install Java 8.
 
 If not the program will prompt you a message saying that it already has it
-or that you have a later version.
+or that you have a later version of Java.
