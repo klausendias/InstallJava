@@ -22,20 +22,21 @@ if [[ "$_java" ]]; then
     echo version "$version"
     
     if [[ "$version" > "1.8" ]] && [[ "$version" < "1.9" ]]; then
-         echo Your Version of Java is more than 1.8 but less than 1.9
+         echo Your Version of Java is more than 1.8.0 but less than 1.9.0
 	 echo No need to Upgrade... Skipping Installation Step
-
+         echo Java 8 has already been installed.
+	 echo INSTALLED.
 	 #Running Application
 	 #echo Running Application... 
 	 #./run.sh
     elif [[ "$version" > "1.9" ]]; then        
-         echo Your Version of Java is greater than 1.9
+         echo Your Version of Java is greater than 1.9.0
          
 	 #Running Application
 	 #echo Running Application...
 	 #./run.sh
     else 
- 	 echo Your Version of Java is less than 1.8
+ 	 echo Your Version of Java is less than 1.8.0
 	 echo Upgrading to Java 8...
 
 	 #With Homebrew we will install Java 8
