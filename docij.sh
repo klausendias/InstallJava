@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # (Note:) For now this will only install Java 8 if its not already installed. 
-# This has been tested and ran successfully on my wifes computer.
+# This has been tested and ran successfully on a machine that did not have Java 8.
 # If you are currently running a later version of java use the following brew to 
 # reinstall the latest version:
 # brew cask install caskroom/versions/java
@@ -20,6 +20,7 @@ fi
 if [[ "$_java" ]]; then
     version=$("$_java" -version 2>&1 | awk -F '"' '/version/ {print $2}')
     echo version "$version"
+    
     if [[ "$version" > "1.8" ]] && [[ "$version" < "1.9" ]]; then
          echo Your Version of Java is more than 1.8 but less than 1.9
 	 echo No need to Upgrade... Skipping Installation Step
@@ -43,7 +44,7 @@ if [[ "$_java" ]]; then
 	 brew tap caskroom/cask
 	 brew cask install caskroom/versions/java8
 
-   echo INSTALLED.
+         echo INSTALLED.
 	 #Running Application
 	 #echo Running Application...
 	 #./run.sh
