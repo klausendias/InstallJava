@@ -7,4 +7,5 @@ $ ./docij.sh
 This script will first check the version of Java you currently have on your machine.
 Then it will determine whether or not it needs Java 8.
 If your machine does need Java 8 it will install Java 8.
-If not it will tell you you already have it or that you have a later version.
+If not the program will prompt you a message saying that it already has it
+or that you have a later version.
