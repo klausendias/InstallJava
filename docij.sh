@@ -1,10 +1,18 @@
 #!/bin/sh
 
-# (Note:) For now this will only install Java 8 if its not already installed. 
-# This has been tested and ran successfully on a machine that did not have Java 8.
-# If you are currently running a later version of java use the following brew to 
-# reinstall the latest version:
-# brew cask install caskroom/versions/java
+# iCheckInstallJava Checks and Installs a version of Java specified by the user.
+# Copyright (C) 2018  Matthew Goldsmith
+
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+
 
 #Checking Version of Java
 if type -p java; then
