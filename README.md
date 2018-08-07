@@ -1,5 +1,8 @@
 # iCheckInstallJava
 
+## Description
+This is an automated installation of Java 8 using [Homebrew](https://brew.sh/).
+
 ## Mac OS X Installation
 From your command-line terminal. Input and enter the following:
 ```bash
@@ -17,11 +20,14 @@ Lets talk about how the script installs Java 8:
 
 3. If your machine has an earlier version it will install Java 8 using [Homebrew](https://brew.sh/).
 
-4. At the end of the installation it will note that the installation was a success.
+4. If you do not have homebrew the script will install homebrew, update homebrew, install cask using brew,
+   and tap into caskroom to the java repo to install Java 8.
 
-5. If your machine has anything greater than Java 8 and less than 9 it will display a success.
+5. At the end of the installation it will note that the installation was a success.
 
-6. If your machine has a more recent version such as Java 9 or above it will not do anything.
+6. If your machine has anything greater than Java 8 and less than 9 it will display a success.
+
+7. If your machine has a more recent version such as Java 9 or above it will not do anything.
 
 ## Testing
 This has been successfully tested on a few different MacBooks and ran without error.
