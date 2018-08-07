@@ -25,14 +25,15 @@ Lets talk about how the script installs Java 8:
 
 3. If your machine has an earlier version it will install Java 8 using [Homebrew](https://brew.sh/).
 
-4. If you do not have homebrew the script will install homebrew, update homebrew, install cask using brew,
-   and taps into cask to install Java 8.
+4. If you do not have homebrew the script will install homebrew.
 
-5. At the end of the installation it will note that the installation was a success.
+5. Next the script will update homebrew if needed, install cask using brew and taps into cask to install Java 8.
 
-6. If your machine has anything greater than Java 8 and less than 9 it will display a success.
+6. At the end of the installation it will note that the installation was a success.
 
-7. If your machine has a more recent version such as Java 9 or above it will not do anything.
+7. If your machine has anything greater than Java 8 and less than 9 it will display a success.
+
+8. If your machine has a more recent version such as Java 9 or above it will not do anything.
 
 ## Testing
 This has been successfully tested on a few different MacBooks and ran without error.
