@@ -26,7 +26,7 @@ Lets talk about how the script installs Java 8:
 3. If your machine has an earlier version it will install Java 8 using [Homebrew](https://brew.sh/).
 
 4. If you do not have homebrew the script will install homebrew, update homebrew, install cask using brew,
-   and tap into caskroom to the java repo to install Java 8.
+   and taps into cask to install Java 8.
 
 5. At the end of the installation it will note that the installation was a success.
 
