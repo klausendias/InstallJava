@@ -1,7 +1,12 @@
 # iCheckInstallJava
 
 ## Description
-This is an automated installation of Java 8 using [Homebrew](https://brew.sh/).
+This is an automated installation of Java 8 using [Homebrew](https://brew.sh/). 
+
+This script also checks for the current version of Java running on your machine.
+
+This will determine whether you need this particular version or not. More info below.
+
 
 ## Mac OS X Installation
 From your command-line terminal. Input and enter the following:
@@ -10,7 +15,7 @@ $ ./install.sh
 ```
 ## How it works
 
-First of all, after entering the command noted above into your terminal. YOU ARE DONE! 
+After entering the command noted above into your terminal. You are already done. 
 
 Lets talk about how the script installs Java 8:
 
@@ -31,7 +36,6 @@ Lets talk about how the script installs Java 8:
 
 ## Testing
 This has been successfully tested on a few different MacBooks and ran without error.
-This script has also been tested on a few different university computers (Macs) and without error.
 
 This has not been tested on Linux or Windows.
 
