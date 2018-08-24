@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# iCheckInstallJava Checks and Installs a version of Java specified by the user.
+# InstallJava Installs Java 8.
 # Copyright (C) 2018  Matthew Goldsmith
 
 # This program is free software: you can redistribute it and/or modify
