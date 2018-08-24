@@ -1,4 +1,4 @@
-# iCheckInstallJava
+# InstallJava
 
 ## Description
 This is an automated installation of Java 8. 
