@@ -31,32 +31,26 @@ if [[ "$_java" ]]; then
     
     if [[ "$version" > "1.8" ]] && [[ "$version" < "1.9" ]]; then
          echo Your Version of Java is more than 1.8.0 but less than 1.9.0
-	 echo No need to Upgrade... Skipping Installation Step
+         echo No need to Upgrade... Skipping Installation Step
          echo Java 8 has already been installed.
-	 echo INSTALLED.
-	 #Running Application
-	 #echo Running Application... 
-	 #./run.sh
+         echo Complete.
+
     elif [[ "$version" > "1.9" ]]; then        
          echo Your Version of Java is greater than 1.9.0
          
-	 #Running Application
-	 #echo Running Application...
-	 #./run.sh
     else 
- 	 echo Your Version of Java is less than 1.8.0
-	 echo Upgrading to Java 8...
+         echo Your Version of Java is less than 1.8.0
+         echo Upgrading to Java 8...
 
-	 #With Homebrew we will install Java 8
-	 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-	 brew update
-	 brew tap caskroom/cask
-	 brew cask install caskroom/versions/java8
+         #With Homebrew we will install Java 8
+         /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+         brew update
+         brew tap caskroom/cask
+         brew cask install caskroom/versions/java8
 
          echo INSTALLED.
-	 #Running Application
-	 #echo Running Application...
-	 #./run.sh
+	 echo Complete.
+	 
     fi
 fi
 
